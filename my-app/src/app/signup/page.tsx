@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { NextPage } from "next";
-import styles from "@/styles/signup.module.scss";
+import styles from "@/app/styles/signup.module.scss";
 import DatePicker from "react-datepicker"
 import "react-datepicker/dist/react-datepicker.css";
 import { useRouter } from "next/navigation";

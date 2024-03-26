@@ -4,7 +4,7 @@ import ReactDOM from "react-dom";
 import DaumPostcode from "react-daum-postcode";
 import { useRouter } from "next/navigation";
 import getAddress from "@/app/components/GetAddress";
-import styles from "@/styles/searchaddress.module.scss";
+import styles from "@/app/styles/searchaddress.module.scss";
 
 interface ModalProps {
     open: boolean;

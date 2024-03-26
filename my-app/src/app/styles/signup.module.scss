@@ -1,32 +1,149 @@
-.overlayStyle {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 5;
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  >div {
+    width: 50vw;
+    height: 80vh;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #F1F6F9;
+
+    >form {
+      display: flex;
+      flex-direction: column;
+      width: 45vw;
+      align-items: center;
+      justify-content: center;
+
+      label {
+        width: 5vw;
+        font-size: 14px;
+        color: #555555;
+
+        input,
+        select {
+          width: 22vw;
+          height: 4vh;
+          padding: 5px;
+          margin-left: 10vw;
+          border: 1px solid white;
+          border-radius: 4px;
+        }
+
+      }
+
+      >div {
+        width: 40vw;
+        margin-bottom: 2vh;
+      }
+
+      >div:nth-child(1)>button {
+        font-size: 10px;
+        border: 0;
+        background-color: #526D82;
+        color: white;
+        height: 25px;
+        border-radius: 2px;
+        margin-left: 12px;
+        cursor: pointer;
+      }
+
+      >div:nth-child(8)>label>div {
+        width: 40vw;
+        display: flex;
+          position: relative;
+          bottom: 4vh;
+          margin-bottom: -4vh;
+          left: 1vw;
+        >div {
+          width: 5vw;
+          position: relative;
+          top: 1vh;
+          font-size: 10px;
+          border: 0;
+          background-color: #526D82;
+          color: white;
+          height: 25px;
+          border-radius: 2px;
+          margin-left: 12px;
+          cursor: pointer;
+          text-align: center;
+          line-height: 25px;
+        }
+      }
+
+      >div:nth-child(8) input {
+        margin-top: 1vh;
+      }
+
+      >button {
+        background-color: #526D82;
+        color: #ffffff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+        transition: background-color 0.3s;
+        width: 130px;
+        height: 35px;
+
+        &:hover {
+          background-color: #005499;
+        }
+      }
+
+      >div:nth-child(2)>label>input {
+        margin-left: 7vw;
+      }
+
+      >div:nth-child(3)>label>input {
+        margin-left: 4.5vw;
+      }
+
+      >div:nth-child(4)>label>input {
+        margin-left: 9vw;
+      }
+
+      >div:nth-child(5)>label>div>div>input {
+        margin-left: 7vw;
+      }
+
+      >div:nth-child(6)>label>input {
+        margin-left: 6vw;
+      }
+
+      >div:nth-child(7)>label>input {
+        margin-left: 8vw;
+      }
+
+      >div:nth-child(8)>label>input {
+        margin-left: 11vw;
+      }
+
+      div:nth-child(9)>label>select {
+        margin-left: 9vw;
+      }
+      >div span{
+        font-size: 12px;
+        color: #555555;
+        margin-left: 10vw;
+      }
+    }
+  }
 }
 
-.modalStyle {
-  position: fixed;
-  width: 40vw;
-  height: 65vh;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 50px;
-  background-color: #ffffff;
-  z-index: 5;
-  >button{
-      width: 50px;
-      height: 30px;
-      background-color: rgb(66, 66, 66);
-      color: white;
-      border: none;
-      border-radius: 5px;
-      margin-top: 10px;
-      position: relative;
-      left: 14vw;
-  }
+.alert {
+  background-color: #ff9999;
+  color: #cc0000;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
 }
